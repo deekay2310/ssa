@@ -172,6 +172,30 @@ blockquote {
     margin: 20px 0 20px;
     padding: 30px;
 }
+.first-drop span{
+    display: block;
+}
+.text1{
+    position: relative;
+    animation: text 5s 1;
+}
+.text2{
+
+}
+@keyframes text{
+    0%{
+        color: black;
+        margin-bottom: -40px;  
+    }
+    30%{
+        letter-spacing: 25px;
+        margin-bottom: -40px;
+    }
+    85%{
+        letter-spacing: 8px;
+        margin-bottom: -40px;
+    }
+}
 /*------------------------------------------------------------------
     WP CORE
 -------------------------------------------------------------------*/
@@ -274,6 +298,9 @@ a img.aligncenter {
     width: auto;
     z-index: 100000;
     /* Above WP toolbar. */
+}
+.read-more{
+    text-align: center;
 }
 /*------------------------------------------------------------------
     HEADER
