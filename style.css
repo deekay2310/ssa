@@ -1270,8 +1270,10 @@ hr.invis1 {
 /*------------------------------------------------------------------
     CONTACT
 -------------------------------------------------------------------*/
-.contact-row{
-    height: 1000px;
+@media only screen and (max-width: 600px) {
+  iframe {
+    width: 450px;
+  }
 }
 .bootstrap-select {
     width: 100% \0;
