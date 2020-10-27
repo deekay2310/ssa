@@ -175,10 +175,17 @@ blockquote {
 .first-drop span{
     display: block;
 }
-.head{
-    position: relative;
-    animation: head 3s ease-in-out infinite;
+
+.animate {
+  font-weight: 900;
+  font-size: 3.5em;
 }
+
+.animate .word {
+    display: inline-block;
+    line-height: 1em;
+}
+
 
 .foot-text{
     position: relative;
