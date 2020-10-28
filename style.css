@@ -176,13 +176,17 @@ blockquote {
     display: block;
 }
 
-.animate {
-  font-weight: 900;
-  font-size: 3.5em;
+.head {
+    font-size: 4.5em;
+    font-weight: 900;
+    /*animation: head 3s ease-in-out 3;*/
+    -webkit-animation: head 1.25s ease-in-out infinite alternate;
+    -moz-animation: head 1.25s ease-in-out infinite alternate;
+    animation: head 1.25s ease-in-out infinite alternate;
 }
 
 .animate .word {
-    display: inline-block;
+    /*display: inline-block;*/
     line-height: 1em;
 }
 
@@ -191,59 +195,63 @@ blockquote {
     position: relative;
 }
 
-@keyframes head {
+@-webkit-keyframes head {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #000, 0 0 40px #000, 0 0 50px #000;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #000, 0 0 40px #000, 0 0 50px #000;
+  }
+}
+
+/*@keyframes head {
     0% {  
         transform: translateY(0);
         text-shadow: 
-            0 0 0 #0c2ffb, 
-            0 0 0 #2cfcfd, 
-            /*0 0 0 #fb203b, 
-            0 0 0 #fefc4b;*/
-    }
+            0 0 0 #f00,
+            0 0 0 #000, 
+            0 0 0 #000;
+    }*/
 
-    20% {  
+/*    20% {  
         transform: translateY(-1em);
-        text-shadow: 
-            /*0 0.125em 0 #0c2ffb, 
-            0 0.25em 0 #2cfcfd, */
-            0 -0.125em 0 #fb203b, 
-            0 -0.25em 0 #fefc4b;
+        text-shadow:  
+            0 0.25em 0 #f00, 
+            0 -0.125em 0 #000, 
+            0 -0.25em 0 #000;
     }
 
     40% {  
         transform: translateY(0.5em);
         text-shadow: 
-            /*0 -0.0625em 0 #0c2ffb, 
-            0 -0.125em 0 #2cfcfd,*/ 
-            0 0.0625em 0 #fb203b, 
-            0 0.125em 0 #fefc4b;
+            0 -0.125em 0 #f00, 
+            0 0.0625em 0 #000, 
+            0 0.125em 0 #000;
     }
     
    60% {
         transform: translateY(-0.25em);
-        text-shadow: 
-            /*0 0.03125em 0 #0c2ffb, 
-            0 0.0625em 0 #2cfcfd,*/ 
-            0 -0.03125em 0 #fb203b, 
-            0 -0.0625em 0 #fefc4b;
+        text-shadow:  
+            0 0.0625em 0 #f00, 
+            0 -0.03125em 0 #000, 
+            0 -0.0625em 0 #000;
     }
 
     80% {  
         transform: translateY(0);
         text-shadow: 
-            /*0 0 0 #0c2ffb, 
-            0 0 0 #2cfcfd,*/ 
-            0 0 0 #fb203b, 
-            0 0 0 #fefc4b;
+            0 0 0 #f00, 
+            0 0 0 #000, 
+            0 0 0 #000;
     }
-}
+} 
 
 @media (prefers-reduced-motion: reduce) {
-    * {
+      {
       animation: none !important;
       transition: none !important;
     }
-}
+} */
 /*------------------------------------------------------------------
     WP CORE
 -------------------------------------------------------------------*/
